@@ -4,10 +4,16 @@
     font-family: "karla", sans-serif;
 }
 
+::selection {
+    background-color: #2ab2af;
+    color: #b0f8f6;
+}
+
 body{
     margin: 0;
     height: 100vh;
 }
+
 
 .join-our-heading {
     color: #4FAFA6;
@@ -15,10 +21,12 @@ body{
 
 .join-our-heading3 {
     color: hsl(71, 73%, 54%);
+    font-size: 145%;
 }
 
 .join-our-p{
     color: hsl(218, 22%, 67%);
+    font-size: 125%;
 }
 
 .join-our-community {
@@ -26,6 +34,26 @@ body{
     flex-direction: column;
     background-color: white;
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.join-our-community {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.join-our-heading {
+    font-weight: 700;
+    font-size: 215%;
+}
+
+.join-our-community-inner-wrapper {
+    margin-top: 4%;
+    margin-left: 5%;
 }
 
 .page-wrapper{
@@ -39,6 +67,16 @@ body{
     grid-row-start: 2;
     grid-row-end: 3;
     background-color: #4ABEBD;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.why-us-paragraph {
+    color: #b8fdfb;
+    font-size: 127%;
 }
 
 .monthly-subscription {
@@ -48,13 +86,42 @@ body{
     grid-row-end: 3;
     background-color: hsl(179, 62%, 43%);
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.join-our-community {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+
+.usd-heading{
+    display: inline-block;
+    color: white;
+}
+
+.full-access-heading{
+    color: white;
+}
+
+.per-month-heading{
+    display: inline-block;
+    color: #62D6D5;
+}
+
+.monthly-subscription-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.why-us-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-bottom: 9%;
+}
+
+.why-us-heading {
+    color: white;
 }
 
 .sign-up-btn {
@@ -65,5 +132,29 @@ body{
     color: white;
     font-size: 117%;
     box-shadow: 0px 3px 15px #19706e;
-    transform: translateX(39px);
+    width: 100%;
+    height: 20%;
+    transition: all 0.25s;
+}
+.sign-up-btn:focus{
+    outline: 0;
+}
+
+.sign-up-btn:hover{
+    filter: drop-shadow(0px 0px 7px #B0CA2F);
+}
+
+.monthly-subscription-heading {
+    color: white;
+    font-size: 147%;
+
+}
+
+.price-tag {
+    font-size: 113%;
+}
+
+.full-access-heading {
+    color: #b8fdfb;
+    font-size: 109%;
 }
