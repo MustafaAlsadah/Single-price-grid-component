@@ -3,6 +3,7 @@
 ## Live Website: https://mustafaalsadah.github.io/Single-price-grid-component/
 
 ![Design preview for the Single price grid component coding challenge](./design/desktop-preview.jpg)
+![Selection customization](./design/Capture.PNG)
 
 ## Welcome! 👋
 
